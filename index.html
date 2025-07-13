@@ -3,152 +3,129 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Puphy - Local IT Support</title>
+  <title>Puphy IT Support</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
+    <div class="logo">Puphy Logo</div>
     <nav>
-      <div class="logo"><img src="images/logo.png" alt="Puphy Logo" class="logo-img" /></div>
-      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
+      <ul>
+        <li><a href="#top">Home</a></li>
         <li><a href="#about">About Us</a></li>
-        <li><a href="#services">Offerings</a></li>
-        <li><a href="#solutions">Specialised Solutions</a></li>
+        <li><a href="#offerings">Offerings</a></li>
+        <li><a href="#specialised">Specialised Solutions</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#talent">Talent</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">Tech Support</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="home" class="section">
-    <img src="images/hero.jpg" alt="Tech Support" class="hero-img" />
+  <section id="top" class="hero" data-aos="fade-up">
     <h1>Solutions Made for Modern Companies</h1>
     <p>Reliable IT Support for Your Local Community</p>
   </section>
 
-  <section id="about" class="section">
-    <h2>About Us</h2>
-    <p>Puphy is dedicated to helping local individuals and businesses solve their IT problems. Whether it's computer repairs or network setup, we’re here to assist.</p>
+  <section id="offerings" class="offerings" data-aos="fade-up">
+    <h2>Our Offerings</h2>
+    <div class="card-grid">
+      <div class="card" data-aos="fade-up">
+        <i class="fas fa-tools"></i>
+        <h3>Technical Support & Repairs</h3>
+        <p>PC/laptop repairs, virus removal, OS upgrades, data recovery, crash fixes.</p>
+      </div>
+      <div class="card" data-aos="fade-up">
+        <i class="fas fa-wifi"></i>
+        <h3>Network & Internet Services</h3>
+        <p>Wi-Fi setup, network troubleshooting, firewall config, Ethernet wiring.</p>
+      </div>
+      <div class="card" data-aos="fade-up">
+        <i class="fas fa-cogs"></i>
+        <h3>Software & Applications</h3>
+        <p>App installs, Office 365 help, antivirus, cloud storage, email setup.</p>
+      </div>
+      <div class="card" data-aos="fade-up">
+        <i class="fas fa-print"></i>
+        <h3>Peripheral & Device Setup</h3>
+        <p>Printer, scanner, webcam, and driver configurations.</p>
+      </div>
+      <div class="card" data-aos="fade-up">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <h3>Consultation & Training</h3>
+        <p>Basic IT training, cyber safety sessions, digital startup guidance.</p>
+      </div>
+      <div class="card" data-aos="fade-up">
+        <i class="fas fa-briefcase"></i>
+        <h3>Business & Startup Support</h3>
+        <p>Custom email domains, POS systems, hosting, disaster recovery.</p>
+      </div>
+      <div class="card" data-aos="fade-up">
+        <i class="fas fa-headset"></i>
+        <h3>Remote Services</h3>
+        <p>TeamViewer/AnyDesk support, diagnostics, updates, cleanups.</p>
+      </div>
+      <div class="card" data-aos="fade-up">
+        <i class="fas fa-lock"></i>
+        <h3>Security Services</h3>
+        <p>Password recovery, firewall setup, smart cameras, parental control.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="services" class="section">
-  <h2>Our Offerings</h2>
-  <h3>🖥️ Technical Support & Repairs</h3>
-  <ul>
-    <li>PC and laptop repairs (hardware & software)</li>
-    <li>Virus/malware removal</li>
-    <li>Operating system installation and upgrades (Windows/Linux)</li>
-    <li>Data recovery and backup solutions</li>
-    <li>Blue screen / system crash troubleshooting</li>
-  </ul>
-
-  <h3>🛜 Network & Internet Services</h3>
-  <ul>
-    <li>Home and small business Wi-Fi setup</li>
-    <li>Network troubleshooting and speed optimization</li>
-    <li>Router and firewall configuration</li>
-    <li>Ethernet cabling and installation</li>
-    <li>Network security assessments</li>
-  </ul>
-
-  <h3>⚙️ Software & Application Services</h3>
-  <ul>
-    <li>Software installation and licensing help</li>
-    <li>Microsoft Office/365 support</li>
-    <li>Antivirus installation and configuration</li>
-    <li>Cloud storage setup (Google Drive, OneDrive, Dropbox)</li>
-    <li>Email configuration and migration (Gmail, Outlook, etc.)</li>
-  </ul>
-
-  <h3>🖨️ Peripheral & Device Setup</h3>
-  <ul>
-    <li>Printer and scanner setup</li>
-    <li>Driver installation and updates</li>
-    <li>Webcam, speaker, and other external device configuration</li>
-  </ul>
-
-  <h3>🧠 Consultation & Training</h3>
-  <ul>
-    <li>Basic digital skills training (for seniors, students, etc.)</li>
-    <li>Cybersecurity awareness sessions</li>
-    <li>Guidance for starting online businesses</li>
-    <li>Tech consultation for school labs or NPOs</li>
-  </ul>
-
-  <h3>💼 Small Business & Startup IT Support</h3>
-  <ul>
-    <li>Business email setup with custom domains</li>
-    <li>Server setup and basic hosting</li>
-    <li>Website maintenance and tech support</li>
-    <li>POS (Point of Sale) system support</li>
-    <li>Backup and disaster recovery planning</li>
-  </ul>
-
-  <h3>☁️ Remote Services</h3>
-  <ul>
-    <li>Remote desktop support (using TeamViewer, AnyDesk, etc.)</li>
-    <li>Remote troubleshooting and updates</li>
-    <li>Online diagnostics and cleanups</li>
-  </ul>
-
-  <h3>🔐 Security Services</h3>
-  <ul>
-    <li>Password management and recovery assistance</li>
-    <li>Basic firewall configuration</li>
-    <li>Parental control and monitoring setup</li>
-    <li>Home camera or smart security tech setup</li>
-  </ul>
-</section>
-
-  <section id="solutions" class="section">
+  <section id="specialised" class="specialised" data-aos="fade-up">
     <h2>Specialised Solutions</h2>
-    <div class="card">
-      <h3>Small Business IT Setup</h3>
-      <p>Custom network and system setup tailored to small businesses.</p>
-    </div>
-    <div class="card">
-      <h3>Remote Support</h3>
-      <p>Get your problems solved without leaving your home or office.</p>
-    </div>
-    <div class="card">
-      <h3>Server Maintenance</h3>
-      <p>Ongoing care and support for your business infrastructure.</p>
-    </div>
+    <ul>
+      <li><strong>Small Business IT Setup</strong> – Tailored systems & networks</li>
+      <li><strong>Remote Support</strong> – Problem-solving from anywhere</li>
+      <li><strong>Server Maintenance</strong> – Infrastructure care and uptime</li>
+    </ul>
   </section>
 
-  <section id="news" class="section">
+  <section id="news" class="news" data-aos="fade-up">
     <h2>News</h2>
     <p>Stay updated with tech tips, community workshops, and announcements. (Coming soon)</p>
   </section>
 
-  <section id="talent" class="section">
+  <section id="talent" class="talent" data-aos="fade-up">
     <h2>Talent</h2>
-    <p>Interested in joining our team? We welcome IT enthusiasts and professionals passionate about community service.</p>
+    <p>
+      Interested in joining our team? We welcome IT enthusiasts and
+      professionals passionate about community service.
+    </p>
   </section>
 
-  <section id="contact" class="section">
+  <section id="contact" class="contact" data-aos="fade-up">
     <h2>Contact Us</h2>
-    <form id="contactForm">
+    <form>
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required />
+
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required />
+
       <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
       <button type="submit">Send Message</button>
     </form>
     <p>Email: info@puphy.co.za | Phone: +27 00 000 0000</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Puphy IT Support. All rights reserved.</p>
+    <p>© 2025 Puphy IT Support. All rights reserved.</p>
     <div class="socials">
       <a href="#">🔗 LinkedIn</a> | <a href="#">📸 Instagram</a>
     </div>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
